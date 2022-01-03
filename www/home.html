@@ -1,0 +1,93 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="eel.js"></script>
+    <script>
+        function startDownload(dev_model,dev_region){
+            eel.startDownload(dev_model,dev_region)
+        }
+        function showDownloadProgress(progress){
+            const container =  document.querySelector(".current-process-container")
+            const p = document.createElement("p")
+            p.textContent = progress
+            container.appendChild(p)
+        }
+        function addText(text) {
+            console.log(text)
+        }
+        function getFirmwares(firmwares) {
+            var table = document.querySelector("#firmware-table");
+            firmwares.forEach(firmware => {
+                console.log(firmware)
+                var tr = document.createElement("tr")
+                var name = document.createElement("td")
+                var model = document.createElement("td")
+                var region = document.createElement("td")
+                var version = document.createElement("td")
+                var button = document.createElement("button")
+
+                tr.setAttribute("id", firmware["firmware_version"])
+                var status = firmware["status"]
+                button.textContent = firmware["status"] === "found" ? "Download" : firmware["status"] === "downloaded" ? "Upload" : ""
+                button.setAttribute("onclick","startDownload('SM-T865','SEB')")
+
+                name.textContent = firmware["device_name"]
+                model.textContent = firmware["model"]
+                region.textContent = firmware["region"]
+                version.textContent = firmware["firmware_version"]
+
+                tr.appendChild(name)
+                tr.appendChild(model)
+                tr.appendChild(region)
+                tr.appendChild(version)
+                tr.append(button)
+
+                table.appendChild(tr)
+            });
+        }
+        eel.expose(addText)
+        eel.expose(getFirmwares)
+        eel.expose(showDownloadProgress)
+    </script>
+    <title>SamFirms</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- <div class="header">
+            SAMFIRMS
+        </div>
+        <div class="progress-container">
+            <div class="progress">
+                <h3>Download</h3>
+                <h2>20.23</h2>
+                <div class="pogress-data"><img src="./assets/images/coolicon.png">
+                    <h4>Mbps</h4>
+                </div>
+            </div>
+            <div class="progress"></div>
+            <div class="progress"></div>
+            <div class="progress"></div>
+        </div>-->
+        <div class="current-process-container">
+
+        </div> 
+        <div class="firmware-container">
+            <table id="firmware-table">
+                <tr>
+                    <th>Device Name</th>
+                    <th>Model</th>
+                    <th>Region</th>
+                    <th>Version</th>
+                    <th>Status</th>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,1642 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+.websiteBody {
+  margin: 0;
+  background-color: rgba(38, 39, 59, 1);
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Page {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  pointer-events: auto;
+}
+.Page-outer {
+  pointer-events: none;
+  z-index: 1;
+}
+.Frame {
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+  width: 100%;
+  margin-left: 0;
+  height: 1024px;
+  min-width: 200px;
+  max-width: 1440px;
+  margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.Frame-outer {
+  pointer-events: none;
+  z-index: 2;
+}
+.Background {
+  position: relative;
+  z-index: 3;
+  pointer-events: none;
+  margin-left: -6px;
+  width: 1446px;
+  min-width: 1446px;
+  height: 897px;
+  margin-top: 37px;
+  margin-bottom: 90px;
+  min-height: 897px;
+}
+.Background-outer {
+  pointer-events: none;
+  z-index: 3;
+  position: relative;
+  display: flex;
+}
+.Rectangle-2 {
+  position: relative;
+  z-index: 47;
+  pointer-events: none;
+  margin-left: 6px;
+  width: 1434px;
+  min-width: 1434px;
+  height: 1px;
+  margin-top: 0px;
+  margin-bottom: 896px;
+  min-height: 1px;
+  background-color: rgba(24, 187, 250, 1);
+}
+.Rectangle-2-outer {
+  pointer-events: none;
+  z-index: 47;
+  position: relative;
+  display: flex;
+}
+.Rectangle-1 {
+  position: relative;
+  z-index: 4;
+  pointer-events: none;
+  margin-left: 6px;
+  width: 1440px;
+  min-width: 1440px;
+  height: 69px;
+  margin-top: -897px;
+  margin-bottom: 828px;
+  min-height: 69px;
+  background-color: rgba(38, 39, 59, 1);
+}
+.Rectangle-1-outer {
+  pointer-events: none;
+  z-index: 4;
+  position: relative;
+  display: flex;
+}
+.SAMFIRMS {
+  position: relative;
+  z-index: 5;
+  pointer-events: none;
+  margin-left: 98px;
+  width: 165px;
+  min-width: 165px;
+  height: 45px;
+  margin-top: -881px;
+  margin-bottom: 836px;
+  min-height: 45px;
+  content: url(assets/images/SAMFIRMS.png);
+}
+.SAMFIRMS-outer {
+  pointer-events: none;
+  z-index: 5;
+  position: relative;
+  display: flex;
+}
+.upSpeed {
+  position: relative;
+  z-index: 31;
+  pointer-events: none;
+  margin-left: 450px;
+  width: 204px;
+  min-width: 204px;
+  height: 204px;
+  margin-top: -760px;
+  margin-bottom: 556px;
+  min-height: 204px;
+}
+.upSpeed-outer {
+  pointer-events: none;
+  z-index: 31;
+  position: relative;
+  display: flex;
+}
+.track {
+  position: relative;
+  z-index: 32;
+  pointer-events: none;
+  margin-left: 0px;
+  width: 204px;
+  min-width: 204px;
+  height: 204px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  min-height: 204px;
+  content: url(assets/images/track.png);
+}
+.track-outer {
+  pointer-events: none;
+  z-index: 32;
+  position: relative;
+  display: flex;
+}
+.UPLOAD {
+  position: relative;
+  z-index: 33;
+  pointer-events: none;
+  margin-left: 73px;
+  width: 58px;
+  min-width: 58px;
+  margin-top: -157px;
+  margin-bottom: 139px;
+  min-height: 18px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgba(255, 255, 255, 1);
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}
+.UPLOAD-outer {
+  pointer-events: none;
+  z-index: 33;
+  position: relative;
+  display: flex;
+}
+.Mbps {
+  position: relative;
+  z-index: 34;
+  pointer-events: none;
+  margin-left: 98px;
+  width: 38px;
+  min-width: 38px;
+  margin-top: -58px;
+  margin-bottom: 40px;
+  min-height: 18px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgba(141, 147, 168, 1);
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}
+.Mbps-outer {
+  pointer-events: none;
+  z-index: 34;
+  position: relative;
+  display: flex;
+}
+.coolicon {
+  position: relative;
+  z-index: 35;
+  pointer-events: none;
+  margin-left: 34.80392156862745%;
+  width: 9.803921568627452%;
+  height: 9.803921568627452%;
+  margin-top: 71.07843137254902%;
+  content: url(assets/images/coolicon.png);
+}
+.coolicon-outer {
+  pointer-events: none;
+  z-index: 35;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.downSpeed {
+  position: relative;
+  z-index: 26;
+  pointer-events: none;
+  margin-left: 102px;
+  width: 204px;
+  min-width: 204px;
+  height: 204px;
+  margin-top: -760px;
+  margin-bottom: 556px;
+  min-height: 204px;
+}
+.downSpeed-outer {
+  pointer-events: none;
+  z-index: 26;
+  position: relative;
+  display: flex;
+}
+.track-1 {
+  position: relative;
+  z-index: 27;
+  pointer-events: none;
+  margin-left: 0px;
+  width: 204px;
+  min-width: 204px;
+  height: 204px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  min-height: 204px;
+  content: url(assets/images/track_1.png);
+}
+.track-1-outer {
+  pointer-events: none;
+  z-index: 27;
+  position: relative;
+  display: flex;
+}
+.DOWNLOAD {
+  position: relative;
+  z-index: 28;
+  pointer-events: none;
+  margin-left: 61px;
+  width: 82px;
+  min-width: 82px;
+  margin-top: -157px;
+  margin-bottom: 139px;
+  min-height: 18px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgba(255, 255, 255, 1);
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}
+.DOWNLOAD-outer {
+  pointer-events: none;
+  z-index: 28;
+  position: relative;
+  display: flex;
+}
+.Mbps-1 {
+  position: relative;
+  z-index: 29;
+  pointer-events: none;
+  margin-left: 97px;
+  width: 38px;
+  min-width: 38px;
+  margin-top: -58px;
+  margin-bottom: 40px;
+  min-height: 18px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgba(141, 147, 168, 1);
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}
+.Mbps-1-outer {
+  pointer-events: none;
+  z-index: 29;
+  position: relative;
+  display: flex;
+}
+.coolicon-1 {
+  position: relative;
+  z-index: 30;
+  pointer-events: none;
+  margin-left: 34.31372549019608%;
+  width: 9.803921568627452%;
+  height: 9.803921568627452%;
+  margin-top: 71.07843137254902%;
+  content: url(assets/images/coolicon_1.png);
+}
+.coolicon-1-outer {
+  pointer-events: none;
+  z-index: 30;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.totalUpload {
+  position: relative;
+  z-index: 21;
+  pointer-events: none;
+  margin-left: 1146px;
+  width: 204px;
+  min-width: 204px;
+  height: 204px;
+  margin-top: -760px;
+  margin-bottom: 556px;
+  min-height: 204px;
+}
+.totalUpload-outer {
+  pointer-events: none;
+  z-index: 21;
+  position: relative;
+  display: flex;
+}
+.track-2 {
+  position: relative;
+  z-index: 22;
+  pointer-events: none;
+  margin-left: 0px;
+  width: 204px;
+  min-width: 204px;
+  height: 204px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  min-height: 204px;
+  content: url(assets/images/track_2.png);
+}
+.track-2-outer {
+  pointer-events: none;
+  z-index: 22;
+  position: relative;
+  display: flex;
+}
+.UPLOAD-1 {
+  position: relative;
+  z-index: 24;
+  pointer-events: none;
+  margin-left: 73px;
+  width: 58px;
+  min-width: 58px;
+  margin-top: -157px;
+  margin-bottom: 139px;
+  min-height: 18px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgba(255, 255, 255, 1);
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}
+.UPLOAD-1-outer {
+  pointer-events: none;
+  z-index: 24;
+  position: relative;
+  display: flex;
+}
+.GB {
+  position: relative;
+  z-index: 25;
+  pointer-events: none;
+  margin-left: 106px;
+  width: 20px;
+  min-width: 20px;
+  margin-top: -58px;
+  margin-bottom: 40px;
+  min-height: 18px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgba(141, 147, 168, 1);
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}
+.GB-outer {
+  pointer-events: none;
+  z-index: 25;
+  position: relative;
+  display: flex;
+}
+.coolicon-2 {
+  position: relative;
+  z-index: 23;
+  pointer-events: none;
+  margin-left: 38.23529411764706%;
+  width: 9.803921568627452%;
+  height: 9.803921568627452%;
+  margin-top: 71.07843137254902%;
+  content: url(assets/images/coolicon_2.png);
+}
+.coolicon-2-outer {
+  pointer-events: none;
+  z-index: 23;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.totalDownload {
+  position: relative;
+  z-index: 16;
+  pointer-events: none;
+  margin-left: 798px;
+  width: 204px;
+  min-width: 204px;
+  height: 204px;
+  margin-top: -760px;
+  margin-bottom: 556px;
+  min-height: 204px;
+}
+.totalDownload-outer {
+  pointer-events: none;
+  z-index: 16;
+  position: relative;
+  display: flex;
+}
+.track-3 {
+  position: relative;
+  z-index: 17;
+  pointer-events: none;
+  margin-left: 0px;
+  width: 204px;
+  min-width: 204px;
+  height: 204px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  min-height: 204px;
+  content: url(assets/images/track_3.png);
+}
+.track-3-outer {
+  pointer-events: none;
+  z-index: 17;
+  position: relative;
+  display: flex;
+}
+.DOWNLOAD-1 {
+  position: relative;
+  z-index: 19;
+  pointer-events: none;
+  margin-left: 61px;
+  width: 82px;
+  min-width: 82px;
+  margin-top: -157px;
+  margin-bottom: 139px;
+  min-height: 18px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgba(255, 255, 255, 1);
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}
+.DOWNLOAD-1-outer {
+  pointer-events: none;
+  z-index: 19;
+  position: relative;
+  display: flex;
+}
+.GB-1 {
+  position: relative;
+  z-index: 20;
+  pointer-events: none;
+  margin-left: 106px;
+  width: 20px;
+  min-width: 20px;
+  margin-top: -58px;
+  margin-bottom: 40px;
+  min-height: 18px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgba(141, 147, 168, 1);
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}
+.GB-1-outer {
+  pointer-events: none;
+  z-index: 20;
+  position: relative;
+  display: flex;
+}
+.coolicon-3 {
+  position: relative;
+  z-index: 18;
+  pointer-events: none;
+  margin-left: 38.23529411764706%;
+  width: 9.803921568627452%;
+  height: 9.803921568627452%;
+  margin-top: 71.07843137254902%;
+  content: url(assets/images/coolicon_3.png);
+}
+.coolicon-3-outer {
+  pointer-events: none;
+  z-index: 18;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.Rectangle-3 {
+  position: relative;
+  z-index: 13;
+  pointer-events: none;
+  margin-left: 0px;
+  width: 1440px;
+  min-width: 1440px;
+  height: 1px;
+  margin-top: -494px;
+  margin-bottom: 493px;
+  min-height: 1px;
+  background-color: rgba(38, 39, 59, 1);
+}
+.Rectangle-3-outer {
+  pointer-events: none;
+  z-index: 13;
+  position: relative;
+  display: flex;
+}
+.CurrentProcess {
+  position: relative;
+  z-index: 6;
+  pointer-events: none;
+  margin-left: 102px;
+  width: 109px;
+  min-width: 109px;
+  height: 18px;
+  margin-top: -467px;
+  margin-bottom: 449px;
+  min-height: 18px;
+}
+.CurrentProcess-outer {
+  pointer-events: none;
+  z-index: 6;
+  position: relative;
+  display: flex;
+}
+.Current-Process {
+  position: relative;
+  z-index: 7;
+  pointer-events: none;
+  margin-left: -5px;
+  width: 119px;
+  min-width: 119px;
+  height: 28px;
+  margin-top: -1px;
+  margin-bottom: -9px;
+  min-height: 28px;
+  content: url(assets/images/Current_Process.png);
+}
+.Current-Process-outer {
+  pointer-events: none;
+  z-index: 7;
+  position: relative;
+  display: flex;
+}
+.Size {
+  position: relative;
+  z-index: 12;
+  pointer-events: none;
+  margin-left: 445px;
+  width: 46px;
+  min-width: 46px;
+  height: 31px;
+  margin-top: -430px;
+  margin-bottom: 399px;
+  min-height: 31px;
+  content: url(assets/images/Size.png);
+}
+.Size-outer {
+  pointer-events: none;
+  z-index: 12;
+  position: relative;
+  display: flex;
+}
+.Firmware-Name {
+  position: relative;
+  z-index: 10;
+  pointer-events: none;
+  margin-left: 97px;
+  width: 139px;
+  min-width: 139px;
+  height: 31px;
+  margin-top: -430px;
+  margin-bottom: 399px;
+  min-height: 31px;
+  content: url(assets/images/Firmware_Name.png);
+}
+.Firmware-Name-outer {
+  pointer-events: none;
+  z-index: 10;
+  position: relative;
+  display: flex;
+}
+.Downloading--- {
+  position: relative;
+  z-index: 8;
+  pointer-events: none;
+  margin-left: 97px;
+  width: 107px;
+  min-width: 107px;
+  height: 28px;
+  margin-top: -352px;
+  margin-bottom: 324px;
+  min-height: 28px;
+  content: url(assets/images/Downloading___.png);
+}
+.Downloading----outer {
+  pointer-events: none;
+  z-index: 8;
+  position: relative;
+  display: flex;
+}
+.Uploading--- {
+  position: relative;
+  z-index: 9;
+  pointer-events: none;
+  margin-left: 97px;
+  width: 88px;
+  min-width: 88px;
+  height: 28px;
+  margin-top: -298px;
+  margin-bottom: 270px;
+  min-height: 28px;
+  content: url(assets/images/Uploading___.png);
+}
+.Uploading----outer {
+  pointer-events: none;
+  z-index: 9;
+  position: relative;
+  display: flex;
+}
+.Rectangle-6-1 {
+  position: relative;
+  z-index: 14;
+  pointer-events: none;
+  margin-left: 0px;
+  width: 1440px;
+  min-width: 1440px;
+  height: 1px;
+  margin-top: -221px;
+  margin-bottom: 220px;
+  min-height: 1px;
+  background-color: rgba(38, 39, 59, 1);
+}
+.Rectangle-6-1-outer {
+  pointer-events: none;
+  z-index: 14;
+  position: relative;
+  display: flex;
+}
+.Firmwares {
+  position: relative;
+  z-index: 11;
+  pointer-events: none;
+  margin-left: 98px;
+  width: 96px;
+  min-width: 96px;
+  height: 31px;
+  margin-top: -195px;
+  margin-bottom: 164px;
+  min-height: 31px;
+  content: url(assets/images/Firmwares.png);
+}
+.Firmwares-outer {
+  pointer-events: none;
+  z-index: 11;
+  position: relative;
+  display: flex;
+}
+.Model {
+  position: relative;
+  z-index: 39;
+  pointer-events: none;
+  margin-left: 112px;
+  width: 60px;
+  min-width: 60px;
+  margin-top: -154px;
+  margin-bottom: 136px;
+  min-height: 18px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgba(141, 147, 168, 1);
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+.Model-outer {
+  pointer-events: none;
+  z-index: 39;
+  position: relative;
+  display: flex;
+}
+.Country {
+  position: relative;
+  z-index: 44;
+  pointer-events: none;
+  margin-left: 1250px;
+  width: 53px;
+  min-width: 53px;
+  margin-top: -153px;
+  margin-bottom: 135px;
+  min-height: 18px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgba(141, 147, 168, 1);
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+.Country-outer {
+  pointer-events: none;
+  z-index: 44;
+  position: relative;
+  display: flex;
+}
+.Country-1 {
+  position: relative;
+  z-index: 43;
+  pointer-events: none;
+  margin-left: 1039px;
+  width: 74px;
+  min-width: 74px;
+  margin-top: -153px;
+  margin-bottom: 135px;
+  min-height: 18px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgba(141, 147, 168, 1);
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+.Country-1-outer {
+  pointer-events: none;
+  z-index: 43;
+  position: relative;
+  display: flex;
+}
+.Country-2 {
+  position: relative;
+  z-index: 42;
+  pointer-events: none;
+  margin-left: 802px;
+  width: 74px;
+  min-width: 74px;
+  margin-top: -153px;
+  margin-bottom: 135px;
+  min-height: 18px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgba(141, 147, 168, 1);
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+.Country-2-outer {
+  pointer-events: none;
+  z-index: 42;
+  position: relative;
+  display: flex;
+}
+.Country-3 {
+  position: relative;
+  z-index: 41;
+  pointer-events: none;
+  margin-left: 564px;
+  width: 74px;
+  min-width: 74px;
+  margin-top: -153px;
+  margin-bottom: 135px;
+  min-height: 18px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgba(141, 147, 168, 1);
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+.Country-3-outer {
+  pointer-events: none;
+  z-index: 41;
+  position: relative;
+  display: flex;
+}
+.Country-4 {
+  position: relative;
+  z-index: 40;
+  pointer-events: none;
+  margin-left: 327px;
+  width: 74px;
+  min-width: 74px;
+  margin-top: -153px;
+  margin-bottom: 135px;
+  min-height: 18px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgba(141, 147, 168, 1);
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+.Country-4-outer {
+  pointer-events: none;
+  z-index: 40;
+  position: relative;
+  display: flex;
+}
+.Rectangle-10 {
+  position: relative;
+  z-index: 15;
+  pointer-events: none;
+  margin-left: 103px;
+  width: 1226px;
+  min-width: 1226px;
+  height: 1px;
+  margin-top: -131px;
+  margin-bottom: 130px;
+  min-height: 1px;
+  background-color: rgba(24, 187, 250, 1);
+}
+.Rectangle-10-outer {
+  pointer-events: none;
+  z-index: 15;
+  position: relative;
+  display: flex;
+}
+.Rectangle-12 {
+  position: relative;
+  z-index: 46;
+  pointer-events: none;
+  margin-left: 1340px;
+  width: 10px;
+  min-width: 10px;
+  height: 19px;
+  margin-top: -128px;
+  margin-bottom: 109px;
+  min-height: 19px;
+  background-color: rgba(24, 187, 250, 1);
+  border-radius: 5px;
+}
+.Rectangle-12-outer {
+  pointer-events: none;
+  z-index: 46;
+  position: relative;
+  display: flex;
+}
+.Rectangle-11 {
+  position: relative;
+  z-index: 45;
+  pointer-events: none;
+  margin-left: 1340px;
+  width: 10px;
+  min-width: 10px;
+  height: 128px;
+  margin-top: -128px;
+  margin-bottom: 0px;
+  min-height: 128px;
+  background-color: rgba(38, 39, 59, 1);
+  border-radius: 5px;
+}
+.Rectangle-11-outer {
+  pointer-events: none;
+  z-index: 45;
+  position: relative;
+  display: flex;
+}
+.Rectangle-8-1 {
+  position: relative;
+  z-index: 38;
+  pointer-events: none;
+  margin-left: 103px;
+  width: 1226px;
+  min-width: 1226px;
+  height: 35px;
+  margin-top: -125px;
+  margin-bottom: 90px;
+  min-height: 35px;
+  background-color: rgba(38, 39, 59, 1);
+  border-radius: 5px;
+}
+.Rectangle-8-1-outer {
+  pointer-events: none;
+  z-index: 38;
+  position: relative;
+  display: flex;
+}
+.Rectangle-7-1 {
+  position: relative;
+  z-index: 36;
+  pointer-events: none;
+  margin-left: 103px;
+  width: 1226px;
+  min-width: 1226px;
+  height: 35px;
+  margin-top: -80px;
+  margin-bottom: 45px;
+  min-height: 35px;
+  background-color: rgba(38, 39, 59, 1);
+  border-radius: 5px;
+}
+.Rectangle-7-1-outer {
+  pointer-events: none;
+  z-index: 36;
+  position: relative;
+  display: flex;
+}
+.Rectangle-9-1 {
+  position: relative;
+  z-index: 37;
+  pointer-events: none;
+  margin-left: 103px;
+  width: 1226px;
+  min-width: 1226px;
+  height: 35px;
+  margin-top: -35px;
+  margin-bottom: 0px;
+  min-height: 35px;
+  background-color: rgba(38, 39, 59, 1);
+  border-radius: 5px;
+}
+.Rectangle-9-1-outer {
+  pointer-events: none;
+  z-index: 37;
+  position: relative;
+  display: flex;
+}
+.TextBox-14 {
+  position: relative;
+  z-index: 50;
+  pointer-events: none;
+  margin-left: 488px;
+  width: 117px;
+  min-width: 117px;
+  height: 53px;
+  margin-top: -774px;
+  margin-bottom: 721px;
+  min-height: 53px;
+}
+.TextBox-14-outer {
+  pointer-events: none;
+  z-index: 50;
+  position: relative;
+  display: flex;
+}
+.q15-05 {
+  position: relative;
+  z-index: 51;
+  pointer-events: none;
+  margin-left: 0px;
+  width: 117px;
+  min-width: 117px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  min-height: 53px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgba(255, 255, 255, 1);
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 54px;
+}
+.q15-05-outer {
+  pointer-events: none;
+  z-index: 51;
+  position: relative;
+  display: flex;
+}
+.TextBox-15 {
+  position: relative;
+  z-index: 48;
+  pointer-events: none;
+  margin-left: 139px;
+  width: 117px;
+  min-width: 117px;
+  height: 53px;
+  margin-top: -774px;
+  margin-bottom: 721px;
+  min-height: 53px;
+}
+.TextBox-15-outer {
+  pointer-events: none;
+  z-index: 48;
+  position: relative;
+  display: flex;
+}
+.q20-23 {
+  position: relative;
+  z-index: 49;
+  pointer-events: none;
+  margin-left: 0px;
+  width: 117px;
+  min-width: 117px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  min-height: 53px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgba(255, 255, 255, 1);
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 54px;
+}
+.q20-23-outer {
+  pointer-events: none;
+  z-index: 49;
+  position: relative;
+  display: flex;
+}
+.TextBox-12 {
+  position: relative;
+  z-index: 54;
+  pointer-events: none;
+  margin-left: 1178px;
+  width: 127px;
+  min-width: 127px;
+  height: 47px;
+  margin-top: -771px;
+  margin-bottom: 724px;
+  min-height: 47px;
+}
+.TextBox-12-outer {
+  pointer-events: none;
+  z-index: 54;
+  position: relative;
+  display: flex;
+}
+.q200-05 {
+  position: relative;
+  z-index: 55;
+  pointer-events: none;
+  margin-left: 0px;
+  width: 127px;
+  min-width: 127px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  min-height: 47px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgba(255, 255, 255, 1);
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+}
+.q200-05-outer {
+  pointer-events: none;
+  z-index: 55;
+  position: relative;
+  display: flex;
+}
+.TextBox-13 {
+  position: relative;
+  z-index: 52;
+  pointer-events: none;
+  margin-left: 830px;
+  width: 127px;
+  min-width: 127px;
+  height: 47px;
+  margin-top: -768px;
+  margin-bottom: 721px;
+  min-height: 47px;
+}
+.TextBox-13-outer {
+  pointer-events: none;
+  z-index: 52;
+  position: relative;
+  display: flex;
+}
+.q198-05 {
+  position: relative;
+  z-index: 53;
+  pointer-events: none;
+  margin-left: 0px;
+  width: 127px;
+  min-width: 127px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  min-height: 47px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgba(255, 255, 255, 1);
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+}
+.q198-05-outer {
+  pointer-events: none;
+  z-index: 53;
+  position: relative;
+  display: flex;
+}
+.TextBox-10 {
+  position: relative;
+  z-index: 57;
+  pointer-events: none;
+  margin-left: 444px;
+  width: 204px;
+  min-width: 204px;
+  height: 35px;
+  margin-top: -487px;
+  margin-bottom: 452px;
+  min-height: 35px;
+  background-color: rgba(38, 39, 59, 1);
+  border-radius: 5px;
+}
+.TextBox-10-outer {
+  pointer-events: none;
+  z-index: 57;
+  position: relative;
+  display: flex;
+}
+.TextBox-11 {
+  position: relative;
+  z-index: 56;
+  pointer-events: none;
+  margin-left: 96px;
+  width: 295px;
+  min-width: 295px;
+  height: 35px;
+  margin-top: -487px;
+  margin-bottom: 452px;
+  min-height: 35px;
+  background-color: rgba(38, 39, 59, 1);
+  border-radius: 5px;
+}
+.TextBox-11-outer {
+  pointer-events: none;
+  z-index: 56;
+  position: relative;
+  display: flex;
+}
+.TextBox-2 {
+  position: relative;
+  z-index: 73;
+  pointer-events: none;
+  margin-left: 454px;
+  width: 30px;
+  min-width: 30px;
+  margin-top: -478px;
+  margin-bottom: 460px;
+  min-height: 18px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgba(255, 255, 255, 1);
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+.TextBox-2-outer {
+  pointer-events: none;
+  z-index: 73;
+  position: relative;
+  display: flex;
+}
+.TextBox-9 {
+  position: relative;
+  z-index: 66;
+  pointer-events: none;
+  margin-left: 106px;
+  width: 99px;
+  min-width: 99px;
+  margin-top: -478px;
+  margin-bottom: 460px;
+  min-height: 18px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgba(255, 255, 255, 1);
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+.TextBox-9-outer {
+  pointer-events: none;
+  z-index: 66;
+  position: relative;
+  display: flex;
+}
+.TextBox-1 {
+  position: relative;
+  z-index: 74;
+  pointer-events: none;
+  margin-left: 1303px;
+  width: 47px;
+  min-width: 47px;
+  height: 28px;
+  margin-top: -433px;
+  margin-bottom: 405px;
+  min-height: 28px;
+  content: url(assets/images/TextBox_1.png);
+}
+.TextBox-1-outer {
+  pointer-events: none;
+  z-index: 74;
+  position: relative;
+  display: flex;
+}
+.Group-1 {
+  position: relative;
+  z-index: 58;
+  pointer-events: none;
+  margin-left: 96px;
+  width: 1248px;
+  min-width: 1248px;
+  height: 14px;
+  margin-top: -412px;
+  margin-bottom: 398px;
+  min-height: 14px;
+}
+.Group-1-outer {
+  pointer-events: none;
+  z-index: 58;
+  position: relative;
+  display: flex;
+}
+.Rectangle-8 {
+  position: relative;
+  z-index: 60;
+  pointer-events: none;
+  margin-left: 0px;
+  width: 1248px;
+  min-width: 1248px;
+  height: 14px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  min-height: 14px;
+  background-color: rgba(100, 235, 226, 1);
+  border-radius: 7px;
+}
+.Rectangle-8-outer {
+  pointer-events: none;
+  z-index: 60;
+  position: relative;
+  display: flex;
+}
+.Rectangle-6 {
+  position: relative;
+  z-index: 59;
+  pointer-events: none;
+  margin-left: 0px;
+  width: 1248px;
+  min-width: 1248px;
+  height: 14px;
+  margin-top: -14px;
+  margin-bottom: 0px;
+  min-height: 14px;
+  background-color: rgba(38, 39, 59, 1);
+  border-radius: 7px;
+}
+.Rectangle-6-outer {
+  pointer-events: none;
+  z-index: 59;
+  position: relative;
+  display: flex;
+}
+.TextBox {
+  position: relative;
+  z-index: 75;
+  pointer-events: none;
+  margin-left: 1311px;
+  width: 38px;
+  min-width: 38px;
+  height: 28px;
+  margin-top: -377px;
+  margin-bottom: 349px;
+  min-height: 28px;
+  content: url(assets/images/TextBox.png);
+}
+.TextBox-outer {
+  pointer-events: none;
+  z-index: 75;
+  position: relative;
+  display: flex;
+}
+.Group-2 {
+  position: relative;
+  z-index: 61;
+  pointer-events: none;
+  margin-left: 96px;
+  width: 1248px;
+  min-width: 1248px;
+  height: 14px;
+  margin-top: -358px;
+  margin-bottom: 344px;
+  min-height: 14px;
+}
+.Group-2-outer {
+  pointer-events: none;
+  z-index: 61;
+  position: relative;
+  display: flex;
+}
+.Rectangle-9 {
+  position: relative;
+  z-index: 63;
+  pointer-events: none;
+  margin-left: 0px;
+  width: 624px;
+  min-width: 624px;
+  height: 14px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  min-height: 14px;
+  background-color: rgba(191, 113, 255, 1);
+  border-radius: 7px;
+}
+.Rectangle-9-outer {
+  pointer-events: none;
+  z-index: 63;
+  position: relative;
+  display: flex;
+}
+.Rectangle-7 {
+  position: relative;
+  z-index: 62;
+  pointer-events: none;
+  margin-left: 0px;
+  width: 1248px;
+  min-width: 1248px;
+  height: 14px;
+  margin-top: -14px;
+  margin-bottom: 0px;
+  min-height: 14px;
+  background-color: rgba(38, 39, 59, 1);
+  border-radius: 7px;
+}
+.Rectangle-7-outer {
+  pointer-events: none;
+  z-index: 62;
+  position: relative;
+  display: flex;
+}
+.TextBox-3 {
+  position: relative;
+  z-index: 72;
+  pointer-events: none;
+  margin-left: 1244px;
+  width: 60px;
+  min-width: 60px;
+  margin-top: -207px;
+  margin-bottom: 189px;
+  min-height: 18px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgba(255, 255, 255, 1);
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}
+.TextBox-3-outer {
+  pointer-events: none;
+  z-index: 72;
+  position: relative;
+  display: flex;
+}
+.TextBox-4 {
+  position: relative;
+  z-index: 71;
+  pointer-events: none;
+  margin-left: 1033px;
+  width: 60px;
+  min-width: 60px;
+  margin-top: -207px;
+  margin-bottom: 189px;
+  min-height: 18px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgba(255, 255, 255, 1);
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}
+.TextBox-4-outer {
+  pointer-events: none;
+  z-index: 71;
+  position: relative;
+  display: flex;
+}
+.TextBox-5 {
+  position: relative;
+  z-index: 70;
+  pointer-events: none;
+  margin-left: 796px;
+  width: 60px;
+  min-width: 60px;
+  margin-top: -207px;
+  margin-bottom: 189px;
+  min-height: 18px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgba(255, 255, 255, 1);
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}
+.TextBox-5-outer {
+  pointer-events: none;
+  z-index: 70;
+  position: relative;
+  display: flex;
+}
+.TextBox-6 {
+  position: relative;
+  z-index: 69;
+  pointer-events: none;
+  margin-left: 558px;
+  width: 60px;
+  min-width: 60px;
+  margin-top: -207px;
+  margin-bottom: 189px;
+  min-height: 18px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgba(255, 255, 255, 1);
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}
+.TextBox-6-outer {
+  pointer-events: none;
+  z-index: 69;
+  position: relative;
+  display: flex;
+}
+.TextBox-7 {
+  position: relative;
+  z-index: 68;
+  pointer-events: none;
+  margin-left: 321px;
+  width: 60px;
+  min-width: 60px;
+  margin-top: -207px;
+  margin-bottom: 189px;
+  min-height: 18px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgba(255, 255, 255, 1);
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}
+.TextBox-7-outer {
+  pointer-events: none;
+  z-index: 68;
+  position: relative;
+  display: flex;
+}
+.TextBox-8 {
+  position: relative;
+  z-index: 67;
+  pointer-events: none;
+  margin-left: 106px;
+  width: 60px;
+  min-width: 60px;
+  margin-top: -207px;
+  margin-bottom: 189px;
+  min-height: 18px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgba(255, 255, 255, 1);
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}
+.TextBox-8-outer {
+  pointer-events: none;
+  z-index: 67;
+  position: relative;
+  display: flex;
+}
+.Button {
+  position: relative;
+  z-index: 65;
+  pointer-events: none;
+  margin-left: 47.15277777777778%;
+  width: 2.4305555555555554%;
+  height: 3.41796875%;
+  margin-top: 37.291666666666664%;
+  content: url(assets/images/Button.png);
+}
+.Button-outer {
+  pointer-events: none;
+  z-index: 65;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.Button-1 {
+  position: relative;
+  z-index: 64;
+  pointer-events: none;
+  margin-left: 50%;
+  width: 2.4305555555555554%;
+  height: 3.41796875%;
+  margin-top: 37.22222222222222%;
+  content: url(assets/images/Button_1.png);
+}
+.Button-1-outer {
+  pointer-events: none;
+  z-index: 64;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
