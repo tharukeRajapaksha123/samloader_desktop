@@ -29,9 +29,10 @@ const changeProgress = (elem, val) => {
 };
 
 // examples
-changeData(downloadSpeed, 30);
+changeData(downloadSpeed, 60);
 changeData(uploadSpeed, 15);
 changeData(totalDownloaded, 100);
 changeData(totalUploaded, 45);
 changeProgress(downloadSlider, 78);
 changeProgress(uploadSlider, 24);
+

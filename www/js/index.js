@@ -1,4 +1,11 @@
+function startDownload(model,region){
+  eel.startDownload(model,region)
+}
+
+
 function setTable(firmwares) {
+  const totalDownloaded = document.querySelector(".total-downloaded");
+  const totalUploaded = document.querySelector(".total-uploaded");
   var table = document.querySelector("#firmware-table");
   firmwares.forEach((firmware) => {
     //console.log(firmware)
@@ -11,13 +18,19 @@ function setTable(firmwares) {
 
     tr.setAttribute("id", firmware["firmware_version"]);
     var status = firmware["status"];
-    button.textContent =
-      firmware["status"] === "found"
-        ? "Download"
-        : firmware["status"] === "downloaded"
-        ? "Upload"
-        : "";
-    button.setAttribute("onclick", "startDownload('SM-T865','SEB')");
+     
+    if(status ==="found"){
+      button.textContent = "DOWNLOAD"
+      button.setAttribute("class","download-button")
+      button.setAttribute("onclick", `startDownload('${firmware["model"]}','${firmware["region"]}')`);
+    }else if(status === "downloaded"){
+      button.textContent = "UPLOAD"
+      button.setAttribute("class","upload-button")
+      button.setAttribute("onclick", `startDownload('${firmware["model"]}','${firmware["region"]}')`);
+    }else{
+      button.textContent = ""
+      button.setAttribute("class","restrict-button")
+    }
 
     name.textContent = firmware["filename"];
     model.textContent = firmware["model"];
@@ -31,6 +44,9 @@ function setTable(firmwares) {
     tr.append(button);
 
     table.appendChild(tr);
+
+    totalDownloaded.textContent = calculateTotalDownloads(status)
+    totalUploaded.textContent = calculateTotalUploads(status)
   });
 }
 
@@ -41,4 +57,60 @@ async function fetchFirmwareData() {
   setTable(data);
 }
 
+function calculateTotalDownloads(status){
+  var tot = 0
+  if(status === "downloaded"){
+    tot++
+  }
+  return tot
+}
+
+function calculateTotalUploads(status){
+  var tot = 0
+  if(status === "uploaded"){
+    tot++
+  }
+  return tot
+}
+
 fetchFirmwareData();
+
+
+function disableButton(){
+  document.getElementsByClassName("download-button").disabled = true;
+  document.getElementsByClassName("upload-button").disabled = true;
+  document.getElementsByClassName("restrict-button").disabled = true;
+}
+
+
+function start(){
+  eel.start()
+}
+
+function pause(){
+  eel.pause()
+}
+
+function resume(){
+  eel.resume()
+}
+
+
+function setActivityText(fileSize,status){
+  const button = document.querySelector(".pause-resume-button")
+  if(fileSize == 0){
+    button.textContent = "Start"
+    button.setAttribute("onclick","start()")
+  }else{
+    if(status === "s"){
+      button.textContent = "PAUSE"
+      button.setAttribute("onclick","pause()")
+    }else{
+      button.textContent = "RESUME"
+      button.setAttribute("onclick","resume()")
+    }
+  }
+}
+
+eel.expose(disableButton)
+eel.expose(setActivityText)

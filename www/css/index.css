@@ -124,6 +124,7 @@ p {
 .name-txt {
   background: #26273b;
   padding: 0.5em;
+  font-size: 10px;
 }
 
 .progress-bar-container {
@@ -258,4 +259,44 @@ p {
   color: rgba(255, 255, 255, 0.6);
   font-size: 0.7rem;
   margin-top: 0;
+}
+
+.download-button{
+  background: none;
+	color: white;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+.upload-button{
+  background: none;
+	color: white;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+.restrict-button{
+  background: none;
+	color: white;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.pause-resume-button{
+  padding: 5px 10px;
+  background-color: royalblue;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 400;
 }

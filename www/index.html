@@ -1,113 +1,169 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css" />
-    <title>Samfirms</title>
-  </head>
 
-  <body>
-    <!-- <a href="./add_post.html">Add Post</a> -->
-    <div class="title-container">
-      <h2 class="title">samfirms</h2>
-      <div class="add-post-button"><a href="./add_post.html">ADD POST</a></div>
-    </div>
-    <div class="data-circle-container">
-      <div class="data-circle">
-        <div class="outer-circle">
-          <div class="inner-circle">
-            <div class="text-container">
-              <p class="data-title">download</p>
-              <h2 class="data-numbers download-speed">20.23</h2>
-              <p class="data-unit">Mbps</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="data-circle">
-        <div class="outer-circle outer-circle-2">
-          <div class="inner-circle">
-            <div class="text-container">
-              <p class="data-title">upload</p>
-              <h2 class="data-numbers upload-speed">20.23</h2>
-              <p class="data-unit">Mbps</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="data-circle">
-        <div class="outer-circle outer-circle-3">
-          <div class="inner-circle">
-            <div class="text-container">
-              <p class="data-title">download</p>
-              <h2 class="data-numbers total-downloaded">20.23</h2>
-              <p class="data-unit">GB</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="data-circle">
-        <div class="outer-circle outer-circle-4">
-          <div class="inner-circle">
-            <div class="text-container">
-              <p class="data-title">upload</p>
-              <h2 class="data-numbers total-uploaded">20.23</h2>
-              <p class="data-unit">GB</p>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/index.css" />
+  <script src="eel.js"></script>
+  <title>Samfirms</title>
+</head>
+
+<body>
+  <!-- <a href="./add_post.html">Add Post</a> -->
+  <div class="title-container">
+    <h2 class="title">samfirms</h2>
+    <div class="add-post-button"><a href="./add_post.html">ADD POST</a></div>
+  </div>
+  <div class="data-circle-container">
+    <div class="data-circle">
+      <div class="outer-circle">
+        <div class="inner-circle">
+          <div class="text-container">
+            <p class="data-title">download</p>
+            <h2 class="data-numbers download-speed">0.0</h2>
+            <p class="data-unit">Mbps</p>
           </div>
         </div>
       </div>
     </div>
-    <div class="current-process-container">
-      <h4 class="current-process-title">current process</h4>
-      <div class="firmware-info-container">
-        <div class="firmware-name-container">
-          <p class="name-title">firmware name</p>
-          <div class="name-txt">sm037376373</div>
-        </div>
-        <div class="firmware-size-container">
-          <p class="name-title">size</p>
-          <div class="name-txt">12.5</div>
-        </div>
-        <div class="controls-container">
-          <p class="name-title">Pause/Resume</p>
-          <div class="name-txt">P/R</div>
-        </div>
-      </div>
-      <div class="progress-bar-container">
-        <div class="progress-title">downloading</div>
-        <div class="progress-bar">
-          <div class="progress-data download-progress-value">100%</div>
-          <div class="placeholder">
-            <div class="slider download-slider"></div>
-          </div>
-        </div>
-      </div>
-      <div class="progress-bar-container">
-        <div class="progress-title">uploading</div>
-        <div class="progress-bar">
-          <div class="progress-data upload-progress-value">100%</div>
-          <div class="placeholder">
-            <div class="slider upload-slider"></div>
+    <div class="data-circle">
+      <div class="outer-circle outer-circle-2">
+        <div class="inner-circle">
+          <div class="text-container">
+            <p class="data-title">upload</p>
+            <h2 class="data-numbers upload-speed">0.0</h2>
+            <p class="data-unit">Mbps</p>
           </div>
         </div>
       </div>
     </div>
-    <div class="divider"></div>
-    <div class="firmware-table-container">
-      <p class="name-title">firmwares</p>
-      <table id="firmware-table">
-        <tr>
-          <th>Device Name</th>
-          <th>Model</th>
-          <th>Region</th>
-          <th>Version</th>
-          <th>Status</th>
-        </tr>
-      </table>
+    <div class="data-circle">
+      <div class="outer-circle outer-circle-3">
+        <div class="inner-circle">
+          <div class="text-container">
+            <p class="data-title">Total Downloads</p>
+            <h2 class="data-numbers total-downloaded">0.0</h2>
+            <p class="data-unit">files</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="js/index.js"></script>
-    <script src="js/progress-controller.js"></script>
-  </body>
+    <div class="data-circle">
+      <div class="outer-circle outer-circle-4">
+        <div class="inner-circle">
+          <div class="text-container">
+            <p class="data-title">Total Uploads</p>
+            <h2 class="data-numbers total-uploaded">0.0</h2>
+            <p class="data-unit">files</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="current-process-container">
+    <h4 class="current-process-title">current process</h4>
+    <div class="firmware-info-container">
+      <div class="firmware-name-container">
+        <p class="name-title">firmware name</p>
+        <div class="name-txt"></div>
+      </div>
+      <div class="firmware-size-container">
+        <p class="name-title">size</p>
+        <div class="name-txt"></div>
+      </div>
+      <div class="controls-container">
+        <p class="name-title">Pause/Resume</p>
+        <div class="pause-resume-button"></div>
+      </div>
+    </div>
+    <div class="progress-bar-container">
+      <div class="progress-title">downloading</div>
+      <div class="progress-bar">
+        <div class="progress-data download-progress-value">100%</div>
+        <div class="placeholder">
+          <div class="slider download-slider"></div>
+        </div>
+      </div>
+    </div>
+    <div class="progress-bar-container">
+      <div class="progress-title">uploading</div>
+      <div class="progress-bar">
+        <div class="progress-data upload-progress-value">100%</div>
+        <div class="placeholder">
+          <div class="slider upload-slider"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="firmware-table-container">
+    <p class="name-title">firmwares</p>
+    <table id="firmware-table">
+      <tr>
+        <th>Device Name</th>
+        <th>Model</th>
+        <th>Region</th>
+        <th>Version</th>
+        <th>Status</th>
+      </tr>
+    </table>
+  </div>
+  <script src="js/index.js"></script>
+  <script>
+    const downloadSpeed = document.querySelector(".download-speed");
+    const uploadSpeed = document.querySelector(".upload-speed");
+    const totalDownloaded = document.querySelector(".total-downloaded");
+    const totalUploaded = document.querySelector(".total-uploaded");
+
+    const downloadSlider = document.querySelector(".download-slider");
+    const uploadSlider = document.querySelector(".upload-slider");
+    const downloadProgressValue = document.querySelector(
+      ".download-progress-value"
+    );
+    const uploadProgressValue = document.querySelector(".upload-progress-value");
+
+    // use this function to change values in data circles
+    // elem = html element, val = value
+    function changeData (elem, val) {
+      console.log("called")
+      switch (elem) {
+        case 1:
+          downloadSpeed.textContent = val
+          break
+        case 2:
+          uploadSpeed.textContent = val
+          break
+        case 3:
+          totalDownloaded.textContent = val
+          break
+        case 4:
+          uploadSpeed.textContent = val
+          break
+      }
+    };
+
+
+    // use this function to change progress bar values
+    function changeProgress  (elem, val)  {
+      elem.style.width = `${val}%`;
+      if (elem === "downloadSlider") {
+        downloadProgressValue.textContent = `${val}%`;
+      }
+
+      if (elem === "uploadSlider") {
+        uploadProgressValue.textContent = `${val}%`;
+      }
+    };
+
+    function setFileName(filename){
+      const n = document.querySelector(".name-txt")
+      n.textContent = filename
+    }
+    eel.expose(changeData)
+    eel.expose(changeProgress)
+    eel.expose(setFileName)
+  </script>
+</body>
+
 </html>

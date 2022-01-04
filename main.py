@@ -12,6 +12,14 @@ from crypt import *
 from fusclient import *
 from versionfetch import *
 
+import psutil as drives
+
+def calculateFreeSpace():
+    checkDrive = drives.disk_usage("/")
+    return checkDrive.free
+
+
+
 def checkUpdate(dev_model,dev_region):
     return getlatestver(dev_model,dev_region)
 
@@ -28,25 +36,29 @@ def main(method,dev_model,dev_region,resume):
         r,link,filename,headers = client.downloadfile(path+filename, dloffset)
         
         if r.status_code == 200 :
-            return True
-            # try:
-            #     data = {
-            #         "headers" : json.dumps(headers) ,
-            #         "link" : link,
-            #         "filename" : filename,
-            #         "firmware_version" : fw_ver,
-            #         "region" : dev_region,
-            #         "model":dev_model,
-            #     }
-            #     r = requests.post("http://127.0.0.1:7000/add-link",data=data)
-            #     print(r)
-            #     return True
-            # except :
-            #     print("post request failed failed")
-            #     return False
+            if dloffset < (calculateFreeSpace() / 100 * 120):
+                res = {
+                    "message" : "succesfully download started",
+                    "status" : True,
+                    "response" : r,
+                    "filename" : filename.split("/")[3],
+                    "downloadedfilesize" :dloffset
+                }
+                return res
+            else:
+                res = {
+                    "message" : "Storage not enough",
+                    "status" : False,
+                    "response" : r
+                }
+                return res
         else:
-            print("failure")
-            return False
+            res = {
+                "message" : "download start faled",
+                "status" : False,
+                "response" : r
+            }
+            return res
         
 
     
