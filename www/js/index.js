@@ -107,7 +107,7 @@ function setActivityText(fileSize,status){
       button.setAttribute("onclick","pause()")
     }else{
       button.textContent = "RESUME"
-      button.setAttribute("onclick","resume()")
+      button.setAttribute("onclick","")
     }
   }
 }
