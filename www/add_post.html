@@ -1,22 +1,40 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/add_post.css" />
+  </head>
 
-<body>
-    <form action="">
-        <input type="text" placeholder="Post title" class="title">
-        <input type="text" placeholder="Post COntent" class = "content">
-        <input type="text" placeholder="Post Meta title" class="meta-title">
-        <input type="text" placeholder="Post Meta descrtption" class="meta-description">
-        <input type="text" placeholder="Download link"="download-link">
-        <button id="submit-button" onclick="addPost(e)">Create Post</button>
+  <body>
+    <div class="title-container">
+      <div class="title new-post-txt">new post</div>
+      <div class="add-post-button"><a href="./index.html">BACK</a></div>
+    </div>
+    <form class="post" action="">
+      <label for="post-title" class="post-label">post title</label>
+      <input type="text" class="title post-input" id="post-title" />
+      <label for="post-content" class="post-label">post content</label>
+      <input type="text" class="content post-input" id="post-content" />
+      <label for="post-meta-title" class="post-label">post meta title</label>
+      <input type="text" class="meta-title post-input" id="post-meta-title" />
+      <label for="post-meta-description" class="post-label"
+        >post meta description</label
+      >
+      <textarea
+        type="text"
+        class="meta-description post-input"
+        id="post-meta-description"
+      ></textarea>
+      <label for="download-link" class="post-label">download link</label>
+      <input type="text" class="download-link post-input" id="download-link" />
+      <div class="btn-container">
+        <button id="cancel-button">cancel</button>
+        <button id="submit-button" onclick="addPost(e)">publish</button>
+      </div>
     </form>
     <script src="./js/add_post.js"></script>
-</body>
-
+  </body>
 </html>

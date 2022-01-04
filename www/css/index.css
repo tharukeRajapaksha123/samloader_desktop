@@ -1,0 +1,261 @@
+body {
+  background-color: #141527;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h2,
+p {
+  margin: 0;
+}
+
+/****** layout ******/
+
+/* title */
+
+.title-container {
+  background: #26273b;
+  margin-top: 1em;
+  padding: 1em 1.2em;
+  border-top: 2px solid #1abbf8;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.add-post-button{
+  padding: 5px 10px;
+  background-color: royalblue;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-post-button >a{
+  text-decoration: none;
+  color: inherit;
+}
+/* data visualizers */
+
+.data-circle-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1em;
+  border-bottom: 2px solid #26273b;
+}
+
+.data-circle {
+  margin: 1em 1em;
+}
+
+.outer-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #60e8de;
+}
+
+.inner-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 135px;
+  width: 135px;
+  border-radius: 50%;
+  background: #141527;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.data-title,
+.data-numbers {
+  margin-bottom: 0.4em;
+}
+
+.outer-circle-2 {
+  background: #c172ff;
+}
+
+.outer-circle-3 {
+  background: #1abbf8;
+}
+
+.outer-circle-4 {
+  background: #1abbf8;
+}
+
+/* current process */
+
+.current-process-container {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 2em;
+}
+
+.firmware-info-container {
+  display: flex;
+  width: 60%;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.firmware-name-container {
+  width: 50%;
+  margin-right: 1em;
+}
+
+.firmware-size-container {
+  width: 35%;
+  margin-right: 1em;
+}
+
+.name-txt {
+  background: #26273b;
+  padding: 0.5em;
+}
+
+.progress-bar-container {
+  width: 100%;
+  margin: 0.5em 0;
+}
+
+.progress-data {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding-bottom: 0.3em;
+}
+
+.placeholder {
+  height: 15px;
+  background: #26273b;
+  border-radius: 20px;
+}
+
+.slider {
+  height: 15px;
+
+  border-radius: 20px;
+}
+
+.download-slider {
+  width: 80%;
+  background: #60e8de;
+}
+
+.upload-slider {
+  width: 80%;
+  background: #c172ff;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: #26273b;
+}
+
+/* firmaware table */
+
+.firmware-table-container {
+  width: 90%;
+  margin: auto;
+  padding: 2em 0;
+}
+
+#firmware-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 0.4rem;
+}
+
+#firmware-table tr {
+  margin: 1em;
+  background: #26273b;
+}
+
+#firmware-table th {
+  text-align: left;
+  border-bottom: 1.5px solid #1abbf8;
+  background: #141527;
+}
+
+#firmware-table td {
+  padding: 0.4em;
+}
+
+#firmware-table button {
+  margin-top: 0.5em;
+  background: lightgray;
+  border: none;
+  color: #141527;
+  padding: 0.3em 0.8em;
+}
+
+/****** Typography ******/
+
+/* site title */
+
+.title {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* data visualizers */
+
+.data-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+.data-unit {
+  font-weight: 400;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* current process */
+
+.current-process-title {
+  text-transform: capitalize;
+  color: #1abbf8;
+  font-weight: 400;
+}
+
+.name-title {
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+.name-txt {
+  text-transform: uppercase;
+}
+
+.progress-title {
+  text-transform: capitalize;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 0;
+  margin-left: 0.5em;
+  font-size: 0.8rem;
+}
+
+.progress-data {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.7rem;
+  margin-top: 0;
+}

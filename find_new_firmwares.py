@@ -68,14 +68,5 @@ def compareFirmwares():
     return newest_firmwars
 
 
-data = {
-    "post_title" : "Test Post Title",
-    "content" : "Test Post Content",
-    "meta_title" : "Test Post Meta title",
-    "meta_description" : "Test Post Meta meta_description",
-    "medifire_link" : "Test Post Media Link",
-    "gdrive_link" : "Test Post GDRIVE Link",
-    "megadrive_link" : "Test Post Mega link",
-}
 
-requests.post("https://sammfirms.herokuapp.com/add-post",data=data)
+

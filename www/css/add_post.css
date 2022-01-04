@@ -1,0 +1,95 @@
+.new-post-txt {
+  color: #1abbf8;
+}
+
+/****** layout ******/
+
+.post {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 75%;
+  margin: auto;
+  padding: 2em;
+}
+
+.post-label {
+  margin-bottom: 0.5em;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.post-input {
+  margin-bottom: 1.5em;
+  background: #26273b;
+  color: white;
+  border: none;
+  padding: 1em;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 2em;
+}
+
+#cancel-button {
+  width: 100px;
+  margin-right: 1em;
+  background: #26273b;
+  color: #141527;
+  border: none;
+  padding: 0.8em 0;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: wheat;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#submit-button {
+  width: 100px;
+  background: #1abbf8;
+  color: #141527;
+  border: none;
+  padding: 0.8em 0;
+  text-transform: capitalize;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#cancel-button:hover {
+  background: #fff;
+  transition: 0.5s;
+  color: blueviolet;
+}
+
+#submit-button:hover {
+  background: #fff;
+  color: #1abbf8;
+  transition: 0.5s;
+}
+
+textarea {
+  height: 150px;
+  box-sizing: border-box;
+  resize: none;
+  overflow-y: scroll;
+  scrollbar-base-color: #1abbf8;
+  border-radius: 5px;
+}
+
+textarea::-webkit-scrollbar {
+  background: #141527;
+  width: 12px;
+  border-radius: 5px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background: #1abbf8;
+  border-radius: 5px;
+}
